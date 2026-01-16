@@ -140,3 +140,33 @@ Proyecto creado por **Irene Smykla Jiménez** para el aprendizaje de un desarrol
 
 ### Imágenes
 **Inicio:**
+![Hero](Hero.png)
+
+**Modos de juego, niveles, dificultades**
+![Modos de juego Individual Multijugador y Estadisticas](ModosDeJuego.png)
+
+![Modos de los mapas, mixto, flicks, tracking y reflejos](ModosMapas.png)
+
+![Dificultades ordenadas del 1 al 7](Dificultades.png)
+
+**Pantalla del juego**
+![Pantalla del juego donde se ve la puntuación, el tiempo restante, los fallos y los círculos apareciendo en pantalla](PantallaJuego.png)
+
+**Modo Multijugador**:
+![Panel de Crear tu Sala](CreaTuSala.png)
+
+![Panel de Unirse a Sala](UnirseASala.png)
+
+![Sala de Espera con chat](SalaEspera.png)
+
+**Estadísticas y Ranking**
+![Estadisticas generales](Estadisticas.png)
+
+![Ranking de usuarios](Ranking.png)
+
+**Configuración Usuario**
+![Edicion del panel, descripcion y foto de perfil](EdicionPerfil.png)
+
+![Registro de Usuario](Registro.png)
+
+
