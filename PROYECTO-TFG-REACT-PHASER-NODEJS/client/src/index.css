@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+
+@keyframes wave {
+    0%, 100% { transform: translate(-50%, -50%) rotate(var(--rotation)) scaleY(0.7); }
+    50% { transform: translate(-50%, -50%) rotate(var(--rotation)) scaleY(1.5); }
+  }
+  
+  .animate-wave {
+    animation: wave 1.5s ease-in-out infinite;
+    --rotation: 0deg;
+  }
+  
+  @keyframes shine {
+    0% { left: -100%; opacity: 0; }
+    20% { opacity: 0.3; }
+    100% { left: 150%; opacity: 0; }
+  }
+  
+  .group-hover\:animate-shine {
+    animation: shine 1.5s ease-in-out;
+  }
+  
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(to right, rgba(96, 165, 250, 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(96, 165, 250, 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 3s ease-out forwards;
+  }
+
+
+@keyframes auraWave {
+    0%, 100% {
+      transform: scale(1.15) translateY(0);
+      opacity: 0.6;
+    }
+    25% {
+      transform: scale(1.2) translateY(-3px);
+      opacity: 0.7;
+    }
+    50% {
+      transform: scale(1.15) translateY(0);
+      opacity: 0.6;
+    }
+    75% {
+      transform: scale(1.1) translateY(3px);
+      opacity: 0.5;
+    }
+  }
+  
+  .animate-aura-wave {
+    animation: auraWave 3s ease-in-out infinite;
+    border-style: dashed;
+    filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.3));
+  }
+
+@keyframes waveAura1 {
+    0%, 100% {
+      transform: scale(1) rotate(0deg);
+      border-radius: 50% 45% 55% 50%;
+    }
+    25% {
+      transform: scale(1.02) rotate(2deg);
+      border-radius: 45% 50% 50% 55%;
+    }
+    50% {
+      transform: scale(1.01) rotate(-1deg);
+      border-radius: 55% 50% 45% 50%;
+    }
+    75% {
+      transform: scale(1.02) rotate(1deg);
+      border-radius: 50% 55% 50% 45%;
+    }
+  }
+  
+  @keyframes waveAura2 {
+    0%, 100% {
+      transform: scale(1.02) rotate(1deg);
+      border-radius: 55% 50% 45% 50%;
+    }
+    25% {
+      transform: scale(1.03) rotate(-1deg);
+      border-radius: 50% 55% 50% 45%;
+    }
+    50% {
+      transform: scale(1.02) rotate(2deg);
+      border-radius: 50% 45% 55% 50%;
+    }
+    75% {
+      transform: scale(1.01) rotate(-2deg);
+      border-radius: 45% 50% 50% 55%;
+    }
+  }
+  
+  @keyframes waveAura3 {
+    0%, 100% {
+      transform: scale(1.01) rotate(-2deg);
+      border-radius: 45% 50% 50% 55%;
+    }
+    25% {
+      transform: scale(1.02) rotate(1deg);
+      border-radius: 50% 45% 55% 50%;
+    }
+    50% {
+      transform: scale(1.03) rotate(-1deg);
+      border-radius: 50% 55% 50% 45%;
+    }
+    75% {
+      transform: scale(1.02) rotate(5deg);
+      border-radius: 55% 50% 45% 50%;
+    }
+  }
+  
+  .animate-wave-aura-1 {
+    animation: waveAura1 3s ease-in-out infinite;
+  }
+  
+  .animate-wave-aura-2 {
+    animation: waveAura2 3s ease-in-out infinite;
+  }
+  
+  .animate-wave-aura-3 {
+    animation: waveAura3 2s ease-in-out infinite;
+  }
